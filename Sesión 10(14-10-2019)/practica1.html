@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ejercicio1_UT2_Sesión10 </title>
+    <link rel="stylesheet" type="text/css" href="css/hojaEstilos1.css">
     <style> /* Hoja de estilos internos. */
         .claseColor{
             color: purple;
         }
     </style>
-    <link rel="stylesheet" type="text/css" href="css/hojaEstilos1.css">
+    
 </head>
 <body>
     <h1>Sesióm 10 - UT2</h1>
@@ -22,5 +23,10 @@
 
     <h2>Trabajo con estilos de aplicación en línea</h2>
     <p>El spam que está dentro de este párrafo, utilizará un <span style="color: royalblue;">estilo en línea</span></p>
+
+    <h2>Prioridades a la hora de aplicar estilos: En línea(directos), de forma interna o  de forma externa.</h2>
+    <p style="color: royalblue;" class="claseColor">Este párrafo va a tener dos propiedades que se sobreescriben. Aquí demostramos que el estilo en línea, tiene prioridad sobre el estilo de hoja interna.</p>
+    <p class="claseColor colorHojaExterna">Pruebo prioridad entre hoja de estilos interna y hoja de estilos externa.</p>
+    <p class="colorHojaExterna claseColor">Pruebo prioridad entre hoja de estilos interna y hoja de estilos externa. Gana el último declarado.</p>
 </body>
 </html>
