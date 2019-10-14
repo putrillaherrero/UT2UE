@@ -1,32 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ejercicio1_UT2_Sesión10 </title>
     <link rel="stylesheet" type="text/css" href="css/hojaEstilos1.css">
-    <style> /* Hoja de estilos internos. */
-        .claseColor{
+    <style>
+        /*Hoja de estilos internos.*/
+        .claseColor {
             color: purple;
+        }
+
+        p {
+            /*Selector de elementos.*/
+            text-align: center;
+            color: salmon;
+        }
+
+        #particularColor1 {
+            /*Selector de elementos con id*/
+            color: yellowgreen;
+        }
+
+        .classAlineacion1 {
+            text-align: right;
+        }
+
+        .variasClases1 { /*Clase para aplicar varias clases*/
+            color: darkgreen;
+        }
+
+        .variasClases2 {
+            text-align: left;
+        }    
+        
+        h1, h2, p {
+            color: darkred;
+        }
+
+        #colorFondo1 {
+            background-color: rgb(0,0,255);
+            color: white;
+        }
+
+        .imagenFondo1 {
+            background-image: url("./img/lobo.jfif");
+            color: white;
+        }
+
+        .imagenFondo2 {
+            background-image: url("./img/zorro.jfif");
+            width: 80%;
+            height: 600px;
+            margin: auto;
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
         }
     </style>
     
 </head>
+
 <body>
     <h1>Sesióm 10 - UT2</h1>
     <h2>Trabajo con hojas de estilos internas</h2>
     <p class="claseColor">Este párrafo utiliza la clase "Estilo de color"</p>
 
     <h2>Trabajo con hojas de estilo externas</h2>
-    <p>El spam que está dentro de este párrafo, utilizará una <span class="colorHojaExterna">clase implementada de una hoja de estilos externa</span></p>
+    <p>El spam que está dentro de este párrafo, utilizará una <span class="colorHojaExterna">clase implementada de una
+            hoja de estilos externa</span></p>
 
     <h2>Trabajo con estilos de aplicación en línea</h2>
     <p>El spam que está dentro de este párrafo, utilizará un <span style="color: royalblue;">estilo en línea</span></p>
 
-    <h2>Prioridades a la hora de aplicar estilos: En línea(directos), de forma interna o  de forma externa.</h2>
-    <p style="color: royalblue;" class="claseColor">Este párrafo va a tener dos propiedades que se sobreescriben. Aquí demostramos que el estilo en línea, tiene prioridad sobre el estilo de hoja interna.</p>
+    <h2>Prioridades a la hora de aplicar estilos: En línea(directos), de forma interna o de forma externa.</h2>
+    <p style="color: royalblue;" class="claseColor">Este párrafo va a tener dos propiedades que se sobreescriben. Aquí
+        demostramos que el estilo en línea, tiene prioridad sobre el estilo de hoja interna.</p>
     <p class="claseColor colorHojaExterna">Pruebo prioridad entre hoja de estilos interna y hoja de estilos externa.</p>
-    <p class="colorHojaExterna claseColor">Pruebo prioridad entre hoja de estilos interna y hoja de estilos externa. Gana el último declarado.</p>
+    <p class="colorHojaExterna claseColor">Pruebo prioridad entre hoja de estilos interna y hoja de estilos externa.
+        Gana el último declarado.</p>
+
+    <h2>Selectores</h2>
+    <p>Los elementos que tengan una clase específica, van a tener las propiedades de esa clase específica, con prioridad
+        sobre los selectores de elemento.</p>
+    <p id="particularColor1">Este párrafo va a cumplir un estilo particular</p>
+    <p class="classAlineacion1">Este párrado cumple el estilo: "classAlineacion1". Y sobreescribe las demás
+        alineaciones.</p>
+
+    <h2>Aplicar varias clases a un elemento</h2>
+    <div class="variasClases1 variasClases2">
+        Capa que cumple varias clases.
+    </div>
+
+    <h2>Colores de fuente y colores de fondo</h2>
+    <div id="colorFondo1">
+        Esta capa tendra el texto blanco y el fondo azul
+    </div>
+    <h3 style="color: #b2ffff">Color establecido mediante código hexadecimal</h3>
+
+    <h2>Imagen de fondo</h2>
+    <div class="imagenFondo1">
+        Como la capa no tiene dimensiones sólo se verá la porción de la imagen adaprada al texto. De no haber escrito texto esta imagen no se vería.
+    </div>
+
+    <h2>Trabajo con imagenes de fondo con una dimensión determinada</h2>
+    <div class="imagenFondo2">
+
+    </div>
 </body>
+
 </html>
