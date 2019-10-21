@@ -1,0 +1,100 @@
+.estiloborde {
+    border-style: dotted;
+}
+
+.anchoborde {
+    border-width: 3px;
+}
+
+.colorborde {
+    border-color: red;
+}
+
+.dimensionescapa {
+    width: 60%;
+    height: 500px;
+    margin: auto;
+}
+
+.bordeizquierdo {
+    border-left-color: royalblue;
+    border-left-style: solid;
+    border-left-width: 4px;
+}
+
+.bordederecho {
+    border-right-color: #feafea;
+    border-right-style: dashed;
+    border-right-width: 1px;
+}
+
+.bordesuperior {
+    border-top-color: salmon;
+    border-top-style: double;
+    border-top-width: 8px;
+}
+
+.bordeinferior {
+    border-bottom-color: springgreen;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+}
+
+.bordeizquierdoresumen {
+    border-left: royalblue solid 4px;
+}
+
+.bordederechoresumen {
+    border-right: #feafea dashed 1px;
+}
+
+.bordesuperiorresumen {
+    border-top: salmon double 8px;
+}
+
+.bordeinferiorresumen {
+    border-bottom: springgreen dotted 2px;
+}
+
+.bordesredondeados {
+    border-radius: 50px; /*Cuanto mayor sea la medida, mayor será el redondeo.*/
+                        /*Si ponemos un 50% hace un circulo perfecto.*/
+    border: solid orangered 4px;
+}
+
+.capaizquierda {
+    float: left;
+    width: 20%;
+    height: 300px;
+    border: solid green 2px;
+}
+
+.capacentro {
+    float: left;
+    width: 60%;
+    height: 300px;
+    border: solid yellow 2px;
+}
+
+.capaderecha {
+    float: left;
+    width: 20%;
+    height: 300px;
+    border: solid tomato 2px;
+}
+
+.contenedor {
+    width: 95%;
+    margin: auto;
+}
+
+.contenedorcapabox {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.tamañocaja {
+    box-sizing: border-box;
+    /*La propiedad "box-sizing: border-box;" incluye el ancho 
+    del borde en el ancho del elemento que tiene ese borde*/
+}
