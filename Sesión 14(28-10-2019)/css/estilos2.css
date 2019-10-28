@@ -1,0 +1,35 @@
+a:link {
+    color: green;
+    text-decoration: none; /*Para que el enlace no aparezca subrayado.*/
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #feafea;
+    background-color: darkgreen;
+    text-decoration: overline;
+}
+
+ol {
+    background: royalblue;
+    padding: 20px;
+}
+
+ol li { /*Elementos li dentro de ol*/
+    background-color: goldenrod;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+ul {
+    list-style-image: url(../recusos/buitre.jfif);
+}
+
