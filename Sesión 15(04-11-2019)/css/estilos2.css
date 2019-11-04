@@ -1,9 +1,44 @@
-p { 
+p.ocultar { 
     display: none;
     background-color: yellow;
     padding: 20px; 
 } 
 
-div:hover p { 
+div:hover p.ocultar { 
     display: block; 
+}
+
+/*Pseudoclase first child*/
+div p:first-child {
+    color: rosybrown;
+}
+
+/*Pseudoelemento first line*/
+p.primeralinea::first-line {
+    font-size: 2em; /*Medida relativa*/
+}
+
+p.sangrado::first-line {
+    text-indent: 2em;
+}
+
+/*Pseudoelemento first letter*/
+p.primeraletra::first-letter {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+}
+
+/*Pseudo elemento Before. Introduce contenido delante de un elemento*/
+h6::before {
+    content: "Elemento - ";
+}
+
+/*Pseudo elemento After. Introduce contenido detrás de un elemento*/
+h5::after {
+    content: " es Cristian";
+}
+
+/*Pseudoelemento selection. Todo lo que seleccione me lo marca a mi antojo.*/
+::selection {
+    color: blueviolet;
 }
