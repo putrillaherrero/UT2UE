@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 1 - Sesión 15</title>
+    <link rel="stylesheet" href="css/estilos1.css">
+</head>
+
+<body>
+    <h2>List Style Outside</h2>
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+    </ol>
+
+    <h2>List Style Inside</h2>
+    <ol class="a">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+    </ol>
+
+    <h2>List Style Outside</h2>
+    <ul class="b">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+    </ul>
+
+    <h2>List Style Inside</h2>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+    </ul>
+
+    <h2>Combinadores</h2>
+    <h3>Selector descendiente</h3>
+
+    <div>
+        <p>Este párrafo es descendiente del div. Debería aparecer rosita.</p>
+        <span>
+            <p>Este párrafo es descendiente del div.</p>
+        </span>
+        <p>Este párrafo también debería ser descendiente.</p>
+    </div>
+
+    <h3>Selector hijo</h3>
+    <span>
+        <a href="https://www.google.es" target="_blank">Enlace hijo de span</a>
+        <br>
+        <a href="https://www.bing.es" target="_blank">Enlace hijo de span</a>
+
+        <div>
+            <a href="https://www.futbolfantasy.es" target="_blank">Enlace descendiente de span, pero no hijo
+                directo.</a>
+        </div>
+
+        <a href="https://www.amazon.es" target="_blank">Enlace hijo de span</a>
+    </span>
+
+    <h3>Selector adyacente hermano</h3>
+    <div>
+        <h4>Esto es un h4</h4>
+        <h5>Esto es un h5 hermano adyacente de h4. Debería aparecer con color</h5>
+        <h5>Esto es un h5 hermano de un h4 pero no adyacente. Por lo que no debería aprecer coloreado</h5>
+    </div>
+
+    <h3>Selector hermano general</h3>
+    <div>
+        <h5>Esto es un h5</h5>
+        <h6>Esto es un h6 hermano adyacente de un elemento h5. Debería aparecer con color</h6>
+        <h6>Esto es un h6 hermano general de un elemento h5</h6>
+        <h6>Esto es un h6 hermano general de un elemento h5</h6>
+        <div>
+            <h6>Esto es un h6 que no debería aparecer coloreado</h6>
+        </div>
+    </div>
+
+    <h3>Pseudoclases</h3>
+    <div>
+        <a href="https://www.google.es" target="_blank" class="resaltado">Elemento que cumple una clase resaltado y que
+            activa su estilo al poner el ratón encima</a>
+
+        <p class="resultado">Probando con p una clase restringida para elemento a con pseudoclase hover. No funciona
+            PUTO.
+        </p>
+    </div>
+
+
+
+</body>
+
+</html>

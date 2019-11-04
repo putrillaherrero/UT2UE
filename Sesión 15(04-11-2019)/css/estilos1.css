@@ -1,0 +1,45 @@
+ol {
+    list-style-position: outside;
+    border: 1px solid black;
+}
+
+ol.a {
+    list-style-position: inside;
+    border: 1px solid black;
+}
+
+ul {
+    list-style-position: inside;
+    border: 1px solid black;
+}
+
+ul.b {
+    list-style-position: outside;
+    border: 1px solid black;
+}
+
+/*Selector descendente.*/
+div p {
+    color: hotpink;
+}
+
+/*Selector hijo.*/
+
+span > a {
+    color: greenyellow;
+}
+
+/*Selector adyacente hermano.*/
+h4 + h5 {
+    color: indigo;
+}
+
+/*Selecores hermanos generales*/
+h5 ~ h6 {
+    color: lightcoral;
+}
+
+/*Pseudocódigos*/
+a.resaltado:hover {
+    background: slateblue;
+}
