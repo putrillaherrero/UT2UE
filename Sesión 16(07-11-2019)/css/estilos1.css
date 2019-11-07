@@ -1,0 +1,25 @@
+.capagenerica {
+    width: 30%;
+    min-height: 200px;
+}
+
+.posicionstatic {
+    position: static;
+    left: 30px;
+    top: 30px;
+    border: 1px solid black;
+}
+
+.positionrelative {
+    position: relative;
+    left: 200px;
+    top: 200px;
+    border: 1px solid rebeccapurple;
+}
+
+.positionrelative1 {
+    position: relative;
+    left: 200px;
+    top: 200px;
+    border: 1px solid royalblue;
+}

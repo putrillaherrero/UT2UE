@@ -1,0 +1,33 @@
+.displaynone {
+    width: 75%;
+    min-height: 500px;
+    border: 1px solid black;
+    display: none;
+}
+
+.displayinline {
+    display: inline;
+    color: red;
+    border: 1px solid black;
+    width;: 70%; 
+    /*No es posible es posible establecer un ancho con la propiedad inline.*/
+}
+
+.pruebasimagen {
+    width: 90%;
+    border: 5px solid red;
+    display: inline;
+}
+
+.displayinlineblock {
+    width: 50%;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+.capaoculta {
+    width: 80%;
+    min-height: 600px;
+    border: 2px solid black;
+    visibility: hidden;
+}
