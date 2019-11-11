@@ -1,0 +1,59 @@
+.capaestandarmini {
+    width: 300px;
+    min-height: 200px;
+    border: 1px solid black;
+}
+
+.contenedor {
+    position: relative; 
+    /*Hay que posicionarlo para que la capa que este dentro de él,
+     este posicionada en él.*/
+    width: 90%;
+    min-height: 600px;
+    margin: auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.positionabsolute {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+.capa1 {
+    position: absolute;
+    background-color: darkgreen;
+    top: 40px;
+    z-index: 200;
+    /*Variamos el z-index de 100 en 100 para facilitar, a posteriori,
+    corregir posibles modificaciones.*/
+}
+
+.capa2 {
+    position: absolute;
+    background-color: royalblue;
+    top: 80px;
+    left: 5%;
+    z-index: 200;
+    /*Cuanto mayor sea el z-index, más arriba estará la capa.*/
+}
+
+.overflowhidden {
+    /*Tengo que forzar una altura fija,
+     para mostrar la propiedad overflow*/
+    height: 300px;
+    overflow: hidden;
+}
+
+.overflowauto {
+    /*Pone el scroll únicamente si es necesario.*/
+    height: 300px;
+    overflow: auto;
+}
+
+.overflowscroll {
+    /*Pone el scroll siempre.*/
+    height: 300px;
+    overflow: scroll;
+}
