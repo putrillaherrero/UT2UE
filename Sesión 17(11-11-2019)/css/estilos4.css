@@ -1,0 +1,42 @@
+.contenedor {    
+    margin-top: 5%;
+    width: 90%;
+    min-height: 400px;
+    margin: auto;
+    margin-left: 5%;
+    border: 1px solid red;
+    box-sizing: border-box;
+    clear: both; 
+    /*Con clear: Limpio los flotantes de los elementos superiores, 
+    en este caso a ambos lados.*/
+}
+
+.capaestandar {
+    width: 25%;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.flotarizquierda {
+    float: left;
+}
+
+.flotarderecha {
+    float: right;
+}
+
+.contenedormenu {
+    width: 95%;
+    margin-bottom: 50px;    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.elemento1 {
+    float: left;
+    text-align: center;
+    width: 25%;
+    padding: 15px 0;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
