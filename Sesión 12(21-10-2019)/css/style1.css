@@ -20,7 +20,7 @@
     border: solid black 1px;
     box-sizing: border-box;
     float: left;
-    overflow: auto;
+    overflow: auto; /*Para sacar el scroll*/
 }
 
 .capacentradaflotante {

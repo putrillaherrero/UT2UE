@@ -28,20 +28,23 @@
             text-align: right;
         }
 
-        .variasClases1 { /*Clase para aplicar varias clases*/
+        .variasClases1 {
+            /*Clase para aplicar varias clases*/
             color: darkgreen;
         }
 
         .variasClases2 {
             text-align: left;
-        }    
-        
-        h1, h2, p {
+        }
+
+        h1,
+        h2,
+        p {
             color: darkred;
         }
 
         #colorFondo1 {
-            background-color: rgb(0,0,255);
+            background-color: rgb(0, 0, 255);
             color: white;
         }
 
@@ -59,7 +62,7 @@
             /* background-repeat: repeat-y; */
         }
     </style>
-    
+
 </head>
 
 <body>
@@ -68,18 +71,29 @@
     <p class="claseColor">Este párrafo utiliza la clase "Estilo de color"</p>
 
     <h2>Trabajo con hojas de estilo externas</h2>
-    <p>El spam que está dentro de este párrafo, utilizará una <span class="colorHojaExterna">clase implementada de una
-            hoja de estilos externa</span></p>
+    <p>El spam que está dentro de este párrafo, utilizará una
+        <span class="colorHojaExterna">clase implementada de una hoja de estilos externa</span>
+    </p>
 
     <h2>Trabajo con estilos de aplicación en línea</h2>
-    <p>El spam que está dentro de este párrafo, utilizará un <span style="color: royalblue;">estilo en línea</span></p>
+    <p>El spam que está dentro de este párrafo, utilizará un
+        <span style="color: royalblue;">estilo en línea</span>
+    </p>
 
     <h2>Prioridades a la hora de aplicar estilos: En línea(directos), de forma interna o de forma externa.</h2>
-    <p style="color: royalblue;" class="claseColor">Este párrafo va a tener dos propiedades que se sobreescriben. Aquí
-        demostramos que el estilo en línea, tiene prioridad sobre el estilo de hoja interna.</p>
-    <p class="claseColor colorHojaExterna">Pruebo prioridad entre hoja de estilos interna y hoja de estilos externa.</p>
-    <p class="colorHojaExterna claseColor">Pruebo prioridad entre hoja de estilos interna y hoja de estilos externa.
-        Gana el último declarado.</p>
+    
+    <p style="color: royalblue;" class="claseColor">
+        Prioridad entre estilos en línea y hoja de estilos interna.
+        Aquí demostramos que el estilo en línea, tiene prioridad sobre el estilo de hoja interna.
+    </p>
+        
+    <p class="claseColor colorHojaExterna">
+        Pruebo prioridad entre hoja de estilos interna y hoja de estilos externa.
+    </p>
+    <p class="colorHojaExterna claseColor">
+        Pruebo prioridad entre hoja de estilos interna y hoja de estilos externa.
+        Gana el último declarado.
+    </p>
 
     <h2>Selectores</h2>
     <p>Los elementos que tengan una clase específica, van a tener las propiedades de esa clase específica, con prioridad
@@ -101,7 +115,8 @@
 
     <h2>Imagen de fondo</h2>
     <div class="imagenFondo1">
-        Como la capa no tiene dimensiones sólo se verá la porción de la imagen adaprada al texto. De no haber escrito texto esta imagen no se vería.
+        Como la capa no tiene dimensiones sólo se verá la porción de la imagen adaprada al texto. De no haber escrito
+        texto esta imagen no se vería.
     </div>
 
     <h2>Trabajo con imagenes de fondo con una dimensión determinada</h2>
